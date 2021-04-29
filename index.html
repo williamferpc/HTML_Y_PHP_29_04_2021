@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="sp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Y PHP</title>
+</head>
+
+<body>
+    <h1>Datos Personales</h1>
+    <form action="formulario.php" method="post" style="padding-left: 10px;padding-top: 10px;">
+        <div>
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" name="nombre" required>
+        </div>
+        <br>
+        <div>
+            <label for="edad">Edad:</label>
+            <input type="number" name="edad" required>
+        </div>
+        <br>
+        <div>
+            <label for="genero">Genero:</label>
+            <select id="genero" name="genero">
+               <option value="masculino">Masculino</option>
+               <option value="femenimo">Femenino</option>
+               <option value="otro">Otro</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" id="terminos" name="terminos" value="terminos">
+            <label for="terminos">Acepto terminos y condiciones</label>
+        </div>
+        <br>
+        <input type="submit" name="submit" value="Enviar" />
+    </form>
+</body>
+
+</html>
